@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Running Json Server
 
 Run `npm run json-server` command to run json server. 
+
+## Covered features
+
+-fetch All Products.

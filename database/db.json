@@ -1,19 +1,10 @@
 {
-    "posts": [
+    "products": [
       {
-        "id": 1,
-        "title": "json-server",
-        "author": "typicode"
+        "id": "812264ee-caa4-4254-9ae2-dbbe98f62874",
+        "name": "onida-52",
+        "price": 43000,
+        "category":"Electronics"
       }
-    ],
-    "comments": [
-      {
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-      }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
+    ]
   }
