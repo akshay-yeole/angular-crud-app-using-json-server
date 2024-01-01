@@ -1,4 +1,9 @@
-<div class="div" *ngIf="products">
+<div class="row">
+    <div class="col text-end">
+        <a href="products/add-product" class="btn btn-secondary">Add product</a>
+    </div>
+</div>
+<div class="row p-2" *ngIf="products">
     <table class="table">
         <thead>
             <tr>

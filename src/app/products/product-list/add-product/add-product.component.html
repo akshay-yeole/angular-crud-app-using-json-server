@@ -1,0 +1,22 @@
+<div class="container bg-light">
+    <div class="bg-light h5">Add Product</div>
+    <div class="col-3">
+        <form #myForm="ngForm" >
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" [(ngModel)]="product.name" name="name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input type="text" [(ngModel)]="product.price" name="price" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Category</label>
+                <input type="text" [(ngModel)]="product.category" name="category" class="form-control">
+            </div>
+            <div class="mb-3">
+                <button type="button" (click)="addProduct()" class="btn btn-secondary">Add</button>
+            </div>    
+        </form>
+    </div>
+</div>

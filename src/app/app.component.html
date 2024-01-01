@@ -1,1 +1,16 @@
-<app-product-list></app-product-list>
+<div class="container">
+    <div class="row">
+        <!-- As a heading -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h6">ProductsApp</span>
+            </div>
+        </nav>
+    </div>
+    <div class="row bg-light">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="row bg-light d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+        <p class="mb-0 text-muted text-center">© 2023 ProductsApp, Inc</p>
+    </div>
+</div>

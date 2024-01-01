@@ -1,10 +1,16 @@
 {
-    "products": [
-      {
-        "id": "812264ee-caa4-4254-9ae2-dbbe98f62874",
-        "name": "onida-52",
-        "price": 43000,
-        "category":"Electronics"
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": "812264ee-caa4-4254-9ae2-dbbe98f62874",
+      "name": "onida-52",
+      "price": 43000,
+      "category": "Electronics"
+    },
+    {
+      "id": "1f45f415-6940-4222-9f0c-8a7cadcae7a9",
+      "name": "ecommerce",
+      "category": "asdf",
+      "price": "123"
+    }
+  ]
+}
