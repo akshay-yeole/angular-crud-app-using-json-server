@@ -25,4 +25,8 @@ export class ProductService {
   saveProduct(id:string, product : Product) :Observable<Product>{
     return this.http.put<Product>(`${this.apiUrl}/products/${id}`, product);
   }
+
+  deleteProducts(id : string) : Observable<boolean>{
+    return this.http.delete<boolean>(`${this.apiUrl}/products/${id}`);
+  }
 }

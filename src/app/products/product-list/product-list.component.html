@@ -23,7 +23,9 @@
                 <td>
                     <a [routerLink]="'/products/' + product.id">
                         <span class="fas fa-pencil-alt bg-light text-secondary"></span>
-
+                    </a>
+                    <a>
+                        <span (click)="deleteProduct(product.id)" class="fas fa-trash bg-light text-secondary margin-left-20 cursor-pointer"></span>
                     </a>
                 </td>
             </tr>
