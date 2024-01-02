@@ -4,13 +4,14 @@
     </div>
 </div>
 <div class="row p-2" *ngIf="products">
-    <table class="table">
+    <table class="table border ">
         <thead>
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Price</th>
                 <th scope="col">Category</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,12 @@
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
                 <td>{{product.category}}</td>
+                <td>
+                    <a [routerLink]="'/products/' + product.id">
+                        <span class="fas fa-pencil-alt bg-light text-secondary"></span>
+
+                    </a>
+                </td>
             </tr>
         </tbody>
     </table>
