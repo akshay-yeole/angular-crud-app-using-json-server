@@ -1,7 +1,7 @@
 <div class="container bg-light">
     <div class="bg-light h5">Add Product</div>
     <div class="col-3">
-        <form #myForm="ngForm" >
+        <form #myForm="ngForm">
             <div class="mb-3">
                 <label class="form-label">Name</label>
                 <input type="text" [(ngModel)]="product.name" name="name" class="form-control">
@@ -16,7 +16,8 @@
             </div>
             <div class="mb-3">
                 <button type="button" (click)="addProduct()" class="btn btn-secondary">Add</button>
-            </div>    
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" (click)="cancel()" class="btn btn-secondary">Back</button>
+            </div>
         </form>
     </div>
 </div>

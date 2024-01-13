@@ -9,6 +9,12 @@ import { AddProductComponent } from './products/product-list/add-product/add-pro
 import { FormsModule } from '@angular/forms';
 import { EditProductComponent } from './products/product-list/edit-product/edit-product.component';
 
+import { NgxsModule } from '@ngxs/store';
+import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
+import { ProductState } from './store/state/product.state';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +26,10 @@ import { EditProductComponent } from './products/product-list/edit-product/edit-
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxsModule.forRoot([ProductState]),
+    NgxsLoggerPluginModule.forRoot(),
+    NgxsReduxDevtoolsPluginModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

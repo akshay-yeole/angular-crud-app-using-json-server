@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Store } from '@ngxs/store';
 import { Product } from 'src/app/models/product.model';
 import { ProductService } from 'src/app/services/product.service';
+import { AddProduct } from 'src/app/store/actions/products.action';
 
 @Component({
   selector: 'app-add-product',
@@ -12,14 +14,16 @@ export class AddProductComponent {
 
   product: Product = { id: '', name: '', category: '', price: 0 };
 
-  constructor(private productService: ProductService, private router : Router) {
+  constructor(private productService: ProductService, private router : Router, private store : Store) {
   }
 
   addProduct() {
     this.product.id = this.generateGuid();
-    this.productService.addProduct(this.product).subscribe(res => {
-      this.router.navigateByUrl('/products');
-    }); 
+    this.store.dispatch(new AddProduct(this.product));
+    this.router.navigateByUrl('/products');
+  }
+  cancel(){
+    this.router.navigateByUrl('/products');
   }
 
   generateGuid() : string {

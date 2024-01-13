@@ -1,5 +1,5 @@
 <div class="container bg-light">
-    <div class="bg-light h5">Add Product</div>
+    <div class="bg-light h5">Edit Product</div>
     <div class="col-3" *ngIf="product">
         <form #myForm="ngForm" >
             <div class="mb-3">
@@ -16,6 +16,7 @@
             </div>
             <div class="mb-3">
                 <button type="button" (click)="saveProduct()" class="btn btn-secondary">Save</button>
+                &nbsp;&nbsp;&nbsp;<button type="button" (click)="cancel()" class="btn btn-secondary">Back</button>
             </div>    
         </form>
     </div>
