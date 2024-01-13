@@ -28,5 +28,7 @@ Run `npm run json-server` command to run json server.
 
 ## Covered features
 
--fetch All Products.
--Add Product
+- fetch All Products.
+- Add Product
+- Update Product
+- Delete Product
